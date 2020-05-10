@@ -26,6 +26,7 @@ public class newAct extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Login Processing", Toast.LENGTH_SHORT).show();
                 final Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
                     @Override
