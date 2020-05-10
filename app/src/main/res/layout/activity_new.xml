@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".newAct">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:gravity="center_horizontal"
+        android:textSize="40dp"
+        android:textStyle="italic"
+        android:textColor="@color/colorBackground"
+        android:id="@+id/tv1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ImgVw"
+        android:src="@drawable/icon1"
+        android:layout_below="@id/tv1"
+        android:paddingTop="100dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Edt_username"
+        android:hint="Enter Username"
+        android:layout_centerInParent="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Edt_pass"
+        android:hint="Enter your password"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/Edt_username"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/Edt_pass"
+        android:text="Login"
+        android:textSize="20dp"
+        android:id="@+id/Btn_login"
+        android:textStyle="italic"
+        android:background="@color/colorPrimaryDark"/>
+
+
+</RelativeLayout>
