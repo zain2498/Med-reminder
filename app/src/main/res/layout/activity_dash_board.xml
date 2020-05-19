@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".DashBoard">
+
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Select a user"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50sp"
+        android:textStyle="italic" />
+
+    <RelativeLayout
+        android:id="@+id/RL_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/tv_user"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/img_doctor"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/doctor"
+            android:padding="20dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/img_doctor"
+            android:fontFamily="sans-serif-medium"
+            android:text="Doctor"
+            android:textColor="@color/colorPrimary"
+            android:textSize="45sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btn_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/tv_user"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/img_patient"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/pat" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/img_patient"
+            android:fontFamily="sans-serif-medium"
+            android:text="Patient"
+            android:textColor="@color/colorPrimary"
+            android:textSize="45sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btn_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent" />
+    </RelativeLayout>
+
+
+</LinearLayout>

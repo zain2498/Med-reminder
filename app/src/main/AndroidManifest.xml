@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".loginImplementation"></activity>
+        <activity android:name=".patientDashboard"></activity>
+        <activity android:name=".doctorsDashboard" />
+        <activity android:name=".DashBoard" />
+        <activity android:name=".ForgetPass" />
+        <activity android:name=".SignUp" />
         <activity android:name=".newAct" />
         <activity android:name=".MainActivity">
             <intent-filter>

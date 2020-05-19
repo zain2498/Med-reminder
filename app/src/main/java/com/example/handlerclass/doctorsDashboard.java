@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class loginImplementation extends AppCompatActivity {
+public class doctorsDashboard extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_implementation);
+        setContentView(R.layout.activity_doctors_dashboard);
     }
 }

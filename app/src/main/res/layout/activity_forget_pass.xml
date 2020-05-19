@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".ForgetPass">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Forgotten Password "
+        android:textColor="@color/colorPrimary"
+        android:textSize="40dp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/ImgVw"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/tv1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginRight="109dp"
+        android:alpha="0.8"
+        android:src="@drawable/da" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/ImgVw"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Enter Email address or Phone number"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ImgVw"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/Edt_input"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edt_border"
+            android:drawableLeft="@drawable/ic_launcher_number"
+            android:hint="abc@gmail.com"
+            android:inputType="phone"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColorHint="@color/colorBackground" />
+
+
+        <Button
+            android:id="@+id/Btn_Continue"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/btn_border"
+            android:text="Continue"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
