@@ -14,30 +14,28 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class newAct extends AppCompatActivity {
     private Button login, cancel;
-    private EditText number, pass;
+    private EditText number ;
+    private TextInputEditText pass;
     private TextView register, forgetPass;
     //delay variable variable
     private static int DELAY_TIME = 2000;
 
-    //Database Variable
-  //  DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new);
 
-        //database Hook
-      //  db = new DatabaseHelper(this);
-        //thats it
 
         //Initialization
         login = (Button) findViewById(R.id.Btn_login);
         cancel = (Button) findViewById(R.id.Btn_Cancel);
         number = (EditText) findViewById(R.id.Edt_username);
-        pass = (EditText) findViewById(R.id.Edt_pass);
+        pass = (TextInputEditText) findViewById(R.id.Edt_pass);
 
         register = (TextView) findViewById(R.id.tv_register);
         forgetPass = (TextView) findViewById(R.id.tv_forgetpass);
@@ -52,7 +50,7 @@ public class newAct extends AppCompatActivity {
             }
         });
 
-        //FrogetPass_BTN move to forgetpass
+        //move to forget Password screen
         forgetPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,18 +89,6 @@ public class newAct extends AppCompatActivity {
             public void onClick(View v) {
                 //method call
                 checkDataEntered();
-
-             /*   //changes has been made !!!
-
-                String Number = number.getText().toString();
-                String password = pass.getText().toString();
-                Boolean ChkNumberpass = db.Numberpassword(Number, password);
-                if (ChkNumberpass == true)
-                    Toast.makeText(getApplicationContext(), "Successfully Login", Toast.LENGTH_SHORT).show();
-                else
-                    Toast.makeText(getApplicationContext(), "Wrong email or password", Toast.LENGTH_SHORT).show();
-
-                //till here !!! */
             }
         });
 

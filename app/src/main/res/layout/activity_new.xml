@@ -47,36 +47,48 @@
         android:drawableLeft="@drawable/ic_launcher_number"
         android:hint="Enter Phone Number"
         android:inputType="phone"
-        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="italic"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         android:textColorHint="@color/colorBackground" />
 
-    <EditText
-        android:id="@+id/Edt_pass"
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="85dp"
         android:layout_below="@id/Edt_username"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="25dp"
-        android:background="@drawable/edt_border"
-        android:drawableLeft="@drawable/ic_launcher_lock"
-        android:hint="Enter Password"
-        android:inputType="textPassword"
-        android:paddingTop="15dp"
+        android:paddingTop="5dp"
         android:paddingBottom="15dp"
-        android:textColorHint="@color/colorBackground" />
+        android:id="@+id/LY_pass"
+        app:passwordToggleEnabled="true"
+        android:drawableLeft="@drawable/ic_launcher_lock"
+        android:textColorHint="@color/colorPrimary"
+        app:passwordToggleTint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Edt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorPrimary"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:background="@drawable/edt_border"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/tv_forgetpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Edt_pass"
+        android:layout_below="@id/LY_pass"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="-10dp"
         android:layout_marginRight="50dp"
         android:background="?android:attr/selectableItemBackground"
         android:clickable="true"
@@ -125,7 +137,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif-medium"
                 android:text="Are you a member?"
                 android:textColor="@color/colorPrimary"
@@ -137,7 +149,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:background="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 android:fontFamily="sans-serif-medium"

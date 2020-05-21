@@ -32,7 +32,7 @@
         android:inputType="textPersonName"
         android:drawableLeft="@drawable/ic_launcher_username"
         android:hint="FirstName"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         />
 
     <EditText
@@ -85,19 +85,26 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:paddingTop="15dp"
-        android:paddingBottom="15dp"
+        android:paddingBottom="10dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:textColorHint="@color/colorBackground"
         android:background="@drawable/edt_border"
         android:inputType="textPassword"
-        android:hint="Password"
+        android:hint="Password(e.g:Abc1234)"
         android:id="@+id/Edt_pass"
         android:drawableLeft="@drawable/ic_launcher_lock"
         />
+    <TextView
+        android:id="@+id/tv_passStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"/>
 
     <EditText
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
         android:id="@+id/Edt_Repass"
         android:layout_width="match_parent"
         android:layout_height="55dp"
@@ -140,7 +147,6 @@
             android:textSize="20dp"
             android:textStyle="italic"
             />
-
     </LinearLayout>
 
 </LinearLayout>

@@ -27,14 +27,13 @@ public class DashBoard extends AppCompatActivity {
         //show msg
         Toast.makeText(getApplicationContext(), " Successful ", Toast.LENGTH_SHORT).show();
 
-      /*  Toolbar toolbar = findViewById(R.id.tb_header);
-        setSupportActionBar(toolbar);
-           //comes in layout file
-            <include
-        android:id="@+id/tb_header"
-        layout="@layout/toolbar"
-         />
-        */
+        //Toolbar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar)
+
+        ;
+
+
         //Doctor's Dashboard is Open
         btn_Doctor.setOnClickListener(new View.OnClickListener() {
             @Override

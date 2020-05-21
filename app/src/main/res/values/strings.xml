@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Medication Reminder</string>
+    <string name="forget_password_detail">Provide your account email\'s for which  you want to reset your password!</string>
 </resources>

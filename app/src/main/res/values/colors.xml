@@ -8,5 +8,7 @@
     <color name="black">#000000 </color>
     <color name="blue">#234F98</color>
     <color name="transparent">@android:color/transparent</color>
+    <color name="Lightwhite">#E0FFFFFF</color>
+
 
 </resources>
